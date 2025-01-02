@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concept2 PB Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #003366;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      padding: 1rem;
+    }
+    .filter-section {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+    select, button {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    table th, table td {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    table th {
+      background-color: #f4f4f4;
+    }
+    footer {
+      background-color: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Concept2 PB Tracker</h1>
+    <p>Welcome, John Doe</p>
+  </header>
+  <div class="container">
+    <div class="filter-section">
+      <select id="timeframe">
+        <option value="all-time">All Time</option>
+        <option value="calendar-year">Calendar Year</option>
+        <option value="rowing-season">Rowing Season</option>
+      </select>
+      <button id="fetch-data">Fetch Data</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Distance/Time</th>
+          <th>Best Time</th>
+          <th>Date Achieved</th>
+        </tr>
+      </thead>
+      <tbody id="pb-table-body">
+        <!-- Example rows (can be dynamically updated) -->
+        <tr>
+          <td>2k</td>
+          <td>6:58.4</td>
+          <td>2023-08-14</td>
+        </tr>
+        <tr>
+          <td>10k</td>
+          <td>38:24.1</td>
+          <td>2022-06-10</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <footer>
+    <p>Concept2 PB Tracker | © 2025</p>
+  </footer>
+  <script>
+    document.getElementById('fetch-data').addEventListener('click', () => {
+      alert('Fetching data... (Mock action for now)');
+    });
+  </script>
+</body>
+</html>
